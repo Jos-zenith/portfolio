@@ -71,7 +71,7 @@ export function ExperiencePage({ searchQuery }: ExperiencePageProps) {
   const education = {
     degree: 'Bachelor of Information Technology',
     institution: 'Loyola ICAM College of Engineering and Technology',
-    cgpa: '7.0 (Cureent)',
+    cgpa: '7.0 (Current)',
     period: '2023 - 2027',
   };
 
