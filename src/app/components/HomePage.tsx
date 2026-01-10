@@ -303,7 +303,7 @@ export function HomePage({ searchQuery, setActiveTab }: HomePageProps) {
 
                   {/* Skills Preview */}
                   <div className="flex flex-wrap gap-2 pt-2">
-                    {['Python', 'Java', 'IoT', 'Next.js', 'Leadership'].map((skill) => (
+                    {['IoT', 'Web Development', 'Leadership'].map((skill) => (
                       <span key={skill} className="bg-white px-3 py-1 rounded-full text-xs text-gray-700 border border-gray-200">
                         {skill}
                       </span>
