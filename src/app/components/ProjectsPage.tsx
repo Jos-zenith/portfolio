@@ -16,6 +16,7 @@ export function ProjectsPage({ searchQuery }: ProjectsPageProps) {
       tags: ['Team Leadership', 'Engineering', 'EV Design'],
       color: 'purple',
       achievement: '🏆 3rd Place EFWDC\'25',
+      link: 'https://drive.google.com/drive/folders/1SVLk6qsWlZ-nsQEsMhuZbYVaBtXikEPL?usp=sharing',
     },
     {
       id: 2,
@@ -26,6 +27,7 @@ export function ProjectsPage({ searchQuery }: ProjectsPageProps) {
       tags: ['Full Stack', 'Health Tech', 'UX Design'],
       color: 'green',
       achievement: '💡 Nellai Hackathon (STARTUPTN)',
+      link: 'https://engineerfit.vercel.app/',
     },
     {
       id: 3,
@@ -36,6 +38,7 @@ export function ProjectsPage({ searchQuery }: ProjectsPageProps) {
       tags: ['PCB design', 'Embedded Systems', 'CAD design'],
       color: 'cyan',
       achievement: '🏆 Hardware Hackathon 2.0',
+      link: 'https://github.com/Jos-zenith/sand-strom-resistant-rover',
     },
     {
       id: 4,
@@ -46,6 +49,7 @@ export function ProjectsPage({ searchQuery }: ProjectsPageProps) {
       tags: ['fullstack', 'NumPy', 'Scikit-learn'],
       color: 'blue',
       achievement: '💡 Ramnad Hackathon (STARTUPTN)',
+      link: 'https://karuvelam.vercel.app/',
     },
     {
       id: 5,
@@ -56,6 +60,7 @@ export function ProjectsPage({ searchQuery }: ProjectsPageProps) {
       tags: ['IoT', 'Web Dev', 'infra Design'],
       color: 'pink',
       achievement: '🥇 1st Place ECircle B-Pitch',
+      link: 'https://drive.google.com/drive/folders/1VZtImJUuUCpftdFahDbpq6ZtNqSo3CA7?usp=sharing',
     },
     {
       id: 6,
@@ -66,6 +71,7 @@ export function ProjectsPage({ searchQuery }: ProjectsPageProps) {
       tags: ['Fullstack', 'React', 'Node.js'],
       color: 'green',
       achievement: '💡 Smart India hackathon',
+      link: 'https://e-jalodayam.vercel.app/',
     },
     {
       id: 7,
@@ -76,6 +82,7 @@ export function ProjectsPage({ searchQuery }: ProjectsPageProps) {
       tags: ['Full Stack', 'Inventory Management', 'Web App'],
       color: 'blue',
       achievement: '💡 Mini-Project',
+      link: 'https://github.com/Jos-zenith/E-Mart',
     },
     {
       id: 8,
@@ -86,6 +93,7 @@ export function ProjectsPage({ searchQuery }: ProjectsPageProps) {
       tags: ['Arduino', 'IoT', 'Embedded C', 'CAD design'],
       color: 'orange',
       achievement: '🥇 1st Place Envision\'23 - ₹10,000',
+      link: 'https://www.canva.com/design/DAGP55P-uCM/cLoRZzEMPXmkLZiIfxTLug/edit?utm_content=DAGP55P-uCM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton',
     },
     {
       id: 9,
@@ -163,9 +171,16 @@ export function ProjectsPage({ searchQuery }: ProjectsPageProps) {
             <div className="p-5 lg:p-6">
               <div className="flex items-start justify-between mb-2">
                 <h3 className="text-base lg:text-lg flex-1 group-hover:text-purple-600 transition-colors">{project.title}</h3>
-                <button className="w-8 h-8 rounded-full bg-purple-50 flex items-center justify-center text-purple-600 hover:bg-purple-100 transition-all opacity-0 group-hover:opacity-100">
-                  <ExternalLink className="w-4 h-4" />
-                </button>
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-8 h-8 rounded-full bg-purple-50 flex items-center justify-center text-purple-600 hover:bg-purple-100 transition-all opacity-0 group-hover:opacity-100"
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                )}
               </div>
               
               <p className="text-sm text-gray-600 mb-3 line-clamp-2">
