@@ -6,8 +6,8 @@ export function AboutPage() {
     {
       icon: <Mail className="w-5 h-5" />,
       label: 'Email',
-      value: 'zenithjoshua.27ti@licet.ac.in',
-      link: 'mailto:zenithjoshua.27ti@licet.ac.in',
+      value: 'zenithjoshua.27it@licet.ac.in',
+      link: 'mailto:zenithjoshua.27it@licet.ac.in',
       color: 'from-purple-500 to-pink-500',
     },
     {
@@ -187,7 +187,7 @@ export function AboutPage() {
             className="text-center py-4"
           >
             <p className="text-xs lg:text-sm text-gray-400">
-              Designed with 💜 inspired by Canva
+              Designed with 💜 inspired from Canva
             </p>
             <p className="text-xs lg:text-sm text-gray-400 mt-1">
               Developed by Jos_zenith
