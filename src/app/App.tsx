@@ -128,13 +128,13 @@ export default function App() {
               
               {/* Search Bar */}
               <div className="flex-1 max-w-2xl relative">
-                <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+                <Search className="absolute left-3 lg:left-4 top-1/2 -translate-y-1/2 w-4 h-4 lg:w-5 lg:h-5 text-gray-400" />
                 <input
                   type="text"
-                  placeholder="Search designs and templates..."
+                  placeholder="Search..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-12 pr-4 py-2.5 rounded-full bg-gray-100 hover:bg-gray-200 focus:bg-white border-0 focus:outline-none focus:ring-2 focus:ring-purple-400 transition-all text-sm"
+                  className="w-full pl-9 lg:pl-12 pr-3 lg:pr-4 py-2 lg:py-2.5 rounded-full bg-gray-100 hover:bg-gray-200 focus:bg-white border-0 focus:outline-none focus:ring-2 focus:ring-purple-400 transition-all text-sm"
                 />
               </div>
 
@@ -154,80 +154,80 @@ export default function App() {
         </div>
 
         {/* Main Content */}
-        <main className="pb-20 lg:pb-8">
+        <main className="pb-28 lg:pb-8">
           {renderPage()}
         </main>
       </div>
 
       {/* Mobile Bottom Navigation (Canva-style) */}
-      <nav className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg z-50">
-        <div className="px-2 py-2 safe-area-inset-bottom">
+      <nav className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg z-50 pb-safe">
+        <div className="px-2 py-3">
           <div className="flex items-center justify-around">
             <button
               onClick={() => setActiveTab('home')}
-              className={`flex flex-col items-center gap-1 px-3 py-2 rounded-xl transition-all min-w-[64px] ${
+              className={`flex flex-col items-center gap-0.5 px-2 py-2 rounded-xl transition-all min-w-[56px] ${
                 activeTab === 'home'
                   ? 'bg-purple-100 text-purple-600'
                   : 'text-gray-500 active:bg-gray-100'
               }`}
             >
-              <Home className="w-5 h-5" />
-              <span className="text-xs">Home</span>
+              <Home className="w-6 h-6" />
+              <span className="text-[10px] font-medium">Home</span>
             </button>
             
             <button
               onClick={() => setActiveTab('projects')}
-              className={`flex flex-col items-center gap-1 px-3 py-2 rounded-xl transition-all min-w-[64px] ${
+              className={`flex flex-col items-center gap-0.5 px-2 py-2 rounded-xl transition-all min-w-[56px] ${
                 activeTab === 'projects'
                   ? 'bg-purple-100 text-purple-600'
                   : 'text-gray-500 active:bg-gray-100'
               }`}
             >
-              <Briefcase className="w-5 h-5" />
-              <span className="text-xs">Projects</span>
+              <Briefcase className="w-6 h-6" />
+              <span className="text-[10px] font-medium">Projects</span>
             </button>
-            
+
             <button
               onClick={() => setActiveTab('experience')}
-              className={`flex flex-col items-center gap-1 px-3 py-2 rounded-xl transition-all min-w-[64px] ${
+              className={`flex flex-col items-center gap-0.5 px-2 py-2 rounded-xl transition-all min-w-[56px] ${
                 activeTab === 'experience'
                   ? 'bg-purple-100 text-purple-600'
                   : 'text-gray-500 active:bg-gray-100'
               }`}
             >
-              <Award className="w-5 h-5" />
-              <span className="text-xs">Experience</span>
+              <Award className="w-6 h-6" />
+              <span className="text-[10px] font-medium">Experience</span>
             </button>
-            
+
             <button
               onClick={() => setActiveTab('skills')}
-              className={`flex flex-col items-center gap-1 px-3 py-2 rounded-xl transition-all min-w-[64px] ${
+              className={`flex flex-col items-center gap-0.5 px-2 py-2 rounded-xl transition-all min-w-[56px] ${
                 activeTab === 'skills'
                   ? 'bg-purple-100 text-purple-600'
                   : 'text-gray-500 active:bg-gray-100'
               }`}
             >
-              <User className="w-5 h-5" />
-              <span className="text-xs">Skills</span>
+              <User className="w-6 h-6" />
+              <span className="text-[10px] font-medium">Skills</span>
             </button>
-            
+
             <button
               onClick={() => setActiveTab('about')}
-              className={`flex flex-col items-center gap-1 px-3 py-2 rounded-xl transition-all min-w-[64px] ${
+              className={`flex flex-col items-center gap-0.5 px-2 py-2 rounded-xl transition-all min-w-[56px] ${
                 activeTab === 'about'
                   ? 'bg-purple-100 text-purple-600'
                   : 'text-gray-500 active:bg-gray-100'
               }`}
             >
-              <Mail className="w-5 h-5" />
-              <span className="text-xs">Contact</span>
+              <Mail className="w-6 h-6" />
+              <span className="text-[10px] font-medium">Contact</span>
             </button>
           </div>
         </div>
       </nav>
 
       {/* Floating Action Button (Canva Create Button) */}
-      <button className="fixed bottom-24 lg:bottom-8 right-4 lg:right-8 w-14 h-14 lg:w-16 lg:h-16 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/40 transition-all flex items-center justify-center text-white z-40 active:scale-95">
+      <button className="fixed bottom-32 lg:bottom-8 right-4 lg:right-8 w-14 h-14 lg:w-16 lg:h-16 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/40 transition-all flex items-center justify-center text-white z-40 active:scale-95">
         <Plus className="w-7 h-7 lg:w-8 lg:h-8" />
       </button>
     </div>

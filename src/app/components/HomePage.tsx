@@ -134,7 +134,7 @@ export function HomePage({ searchQuery, setActiveTab }: HomePageProps) {
   return (
     <>
       <div className="min-h-[calc(100vh-140px)] lg:min-h-[calc(100vh-80px)] flex items-center justify-center">
-        <div className="w-full max-w-7xl mx-auto px-4 lg:px-8 py-8 lg:py-12">
+        <div className="w-full max-w-7xl mx-auto px-4 lg:px-8 py-6 lg:py-12">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Side - Hero Content */}
             <motion.div
@@ -156,76 +156,76 @@ export function HomePage({ searchQuery, setActiveTab }: HomePageProps) {
 
               {/* Main Heading */}
               <div>
-                <h1 className="text-4xl lg:text-6xl mb-4">
-                  <span className="block mb-2">Hi, I'm</span>
+                <h1 className="text-3xl sm:text-4xl lg:text-6xl mb-3 lg:mb-4 leading-tight">
+                  <span className="block mb-1 lg:mb-2">Hi, I'm</span>
                   <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-purple-600 bg-clip-text text-transparent">
                     Zenith Joshua
                   </span>
                 </h1>
-                <p className="text-xl lg:text-2xl text-gray-600">
+                <p className="text-lg sm:text-xl lg:text-2xl text-gray-600">
                   Tech Enthusiast & Entrepreneur
                 </p>
-                <p className="text-base lg:text-lg text-gray-500 mt-4 max-w-xl mx-auto lg:mx-0">
+                <p className="text-sm sm:text-base lg:text-lg text-gray-500 mt-3 lg:mt-4 max-w-xl mx-auto lg:mx-0 leading-relaxed">
                   I am a Technical Founder and Developer dedicated to solving complex real-world problems through integrated hardware and software systems
                 </p>
               </div>
 
               {/* Quick Stats */}
-              <div className="grid grid-cols-3 gap-3 lg:gap-4 py-4">
-                <motion.div 
+              <div className="grid grid-cols-3 gap-2 sm:gap-3 lg:gap-4 py-3 lg:py-4">
+                <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3, duration: 0.5 }}
-                  className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-4 border border-purple-100 hover:border-purple-300 hover:shadow-md transition-all"
+                  className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl lg:rounded-2xl p-3 lg:p-4 border border-purple-100 hover:border-purple-300 hover:shadow-md transition-all"
                 >
-                  <div className="flex items-center justify-center lg:justify-start gap-2 mb-2">
-                    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
-                      <Code2 className="w-4 h-4 text-white" />
+                  <div className="flex items-center justify-center lg:justify-start gap-2 mb-1 lg:mb-2">
+                    <div className="w-7 h-7 lg:w-8 lg:h-8 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                      <Code2 className="w-3.5 h-3.5 lg:w-4 lg:h-4 text-white" />
                     </div>
                   </div>
-                  <div className="text-2xl lg:text-3xl bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-1">
+                  <div className="text-xl sm:text-2xl lg:text-3xl bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-0.5 lg:mb-1 font-bold">
                     {counters.problems}+
                   </div>
-                  <div className="text-xs lg:text-sm text-gray-600">Problems Solved</div>
+                  <div className="text-[10px] sm:text-xs lg:text-sm text-gray-600 leading-tight">Problems Solved</div>
                 </motion.div>
 
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4, duration: 0.5 }}
-                  className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl p-4 border border-yellow-100 hover:border-yellow-300 hover:shadow-md transition-all"
+                  className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-xl lg:rounded-2xl p-3 lg:p-4 border border-yellow-100 hover:border-yellow-300 hover:shadow-md transition-all"
                 >
-                  <div className="flex items-center justify-center lg:justify-start gap-2 mb-2">
-                    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500 to-orange-500 flex items-center justify-center">
-                      <Trophy className="w-4 h-4 text-white" />
+                  <div className="flex items-center justify-center lg:justify-start gap-2 mb-1 lg:mb-2">
+                    <div className="w-7 h-7 lg:w-8 lg:h-8 rounded-lg bg-gradient-to-br from-yellow-500 to-orange-500 flex items-center justify-center">
+                      <Trophy className="w-3.5 h-3.5 lg:w-4 lg:h-4 text-white" />
                     </div>
                   </div>
-                  <div className="text-2xl lg:text-3xl bg-gradient-to-r from-yellow-600 to-orange-600 bg-clip-text text-transparent mb-1">
+                  <div className="text-xl sm:text-2xl lg:text-3xl bg-gradient-to-r from-yellow-600 to-orange-600 bg-clip-text text-transparent mb-0.5 lg:mb-1 font-bold">
                     {counters.awards}
                   </div>
-                  <div className="text-xs lg:text-sm text-gray-600">Awards Won</div>
+                  <div className="text-[10px] sm:text-xs lg:text-sm text-gray-600 leading-tight">Awards Won</div>
                 </motion.div>
 
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5, duration: 0.5 }}
-                  className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-4 border border-blue-100 hover:border-blue-300 hover:shadow-md transition-all"
+                  className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl lg:rounded-2xl p-3 lg:p-4 border border-blue-100 hover:border-blue-300 hover:shadow-md transition-all"
                 >
-                  <div className="flex items-center justify-center lg:justify-start gap-2 mb-2">
-                    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
-                      <Users className="w-4 h-4 text-white" />
+                  <div className="flex items-center justify-center lg:justify-start gap-2 mb-1 lg:mb-2">
+                    <div className="w-7 h-7 lg:w-8 lg:h-8 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
+                      <Users className="w-3.5 h-3.5 lg:w-4 lg:h-4 text-white" />
                     </div>
                   </div>
-                  <div className="text-2xl lg:text-3xl bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-1">
+                  <div className="text-xl sm:text-2xl lg:text-3xl bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-0.5 lg:mb-1 font-bold">
                     {counters.team}
                   </div>
-                  <div className="text-xs lg:text-sm text-gray-600">Projects Completed</div>
+                  <div className="text-[10px] sm:text-xs lg:text-sm text-gray-600 leading-tight">Projects Completed</div>
                 </motion.div>
               </div>
 
               {/* Action Buttons */}
-              <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center lg:justify-start">
                 {quickActions.map((action, index) => (
                   <motion.button
                     key={action.title}
@@ -237,7 +237,7 @@ export function HomePage({ searchQuery, setActiveTab }: HomePageProps) {
                       index === 0
                         ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg shadow-purple-500/30'
                         : 'bg-white text-gray-700 border border-gray-200 hover:border-purple-300'
-                    } px-6 py-3 rounded-full flex items-center justify-center gap-2 transition-all hover:scale-105 active:scale-95`}
+                    } px-5 sm:px-6 py-2.5 sm:py-3 rounded-full flex items-center justify-center gap-2 transition-all hover:scale-105 active:scale-95 text-sm sm:text-base font-medium`}
                   >
                     {action.icon}
                     <span>{action.title}</span>
@@ -254,57 +254,57 @@ export function HomePage({ searchQuery, setActiveTab }: HomePageProps) {
               className="space-y-6"
             >
               {/* Resume Card - Canva Template Style */}
-              <div className="bg-white rounded-3xl p-6 lg:p-8 shadow-xl border border-gray-100">
-                <div className="flex items-center justify-between mb-6">
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center text-white">
-                      <FileText className="w-6 h-6" />
+              <div className="bg-white rounded-2xl lg:rounded-3xl p-5 sm:p-6 lg:p-8 shadow-xl border border-gray-100">
+                <div className="flex items-center justify-between mb-5 lg:mb-6">
+                  <div className="flex items-center gap-2 sm:gap-3">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg lg:rounded-xl bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center text-white">
+                      <FileText className="w-5 h-5 sm:w-6 sm:h-6" />
                     </div>
                     <div>
-                      <h3 className="text-lg">My Resume</h3>
-                      <p className="text-sm text-gray-500">Updated Jan 2026</p>
+                      <h3 className="text-base sm:text-lg font-semibold">My Resume</h3>
+                      <p className="text-xs sm:text-sm text-gray-500">Updated Jan 2026</p>
                     </div>
                   </div>
-                  <a href="https://docs.google.com/document/d/1ojae1n-xKYxAsfgFJk5XETuKijtpQ_1nXZOaocUttjY/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-purple-100 hover:bg-purple-200 flex items-center justify-center text-purple-600 transition-all">
-                    <Download className="w-5 h-5" />
+                  <a href="https://docs.google.com/document/d/1ojae1n-xKYxAsfgFJk5XETuKijtpQ_1nXZOaocUttjY/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-purple-100 hover:bg-purple-200 flex items-center justify-center text-purple-600 transition-all">
+                    <Download className="w-4 h-4 sm:w-5 sm:h-5" />
                   </a>
                 </div>
 
                 {/* Resume Preview */}
-                <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 space-y-4">
-                  <div className="flex items-center gap-3">
-                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white text-xl">
+                <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl lg:rounded-2xl p-4 sm:p-5 lg:p-6 space-y-3 lg:space-y-4">
+                  <div className="flex items-center gap-2 sm:gap-3">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white text-base sm:text-lg lg:text-xl font-semibold">
                       ZJ
                     </div>
                     <div>
-                      <div className="text-lg">Zenith Joshua</div>
-                      <div className="text-sm text-gray-600">Tech Enthusiast & Entrepreneur</div>
+                      <div className="text-base sm:text-lg font-semibold">Zenith Joshua</div>
+                      <div className="text-xs sm:text-sm text-gray-600">Tech Enthusiast & Entrepreneur</div>
                     </div>
                   </div>
 
-                  <div className="space-y-2 text-sm">
+                  <div className="space-y-1.5 lg:space-y-2 text-xs sm:text-sm">
                     <div className="flex items-center gap-2 text-gray-600">
-                      <div className="w-1.5 h-1.5 rounded-full bg-purple-500"></div>
+                      <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-purple-500"></div>
                       <span>Student @Loyola ICAM</span>
                     </div>
                     <div className="flex items-center gap-2 text-gray-600">
-                      <div className="w-1.5 h-1.5 rounded-full bg-purple-500"></div>
+                      <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-purple-500"></div>
                       <span>Team Lead @ EFWDC SAEISS</span>
                     </div>
                     <div className="flex items-center gap-2 text-gray-600">
-                      <div className="w-1.5 h-1.5 rounded-full bg-purple-500"></div>
+                      <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-purple-500"></div>
                       <span>Founder @ Panjaayathu Wellness</span>
                     </div>
                     <div className="flex items-center gap-2 text-gray-600">
-                      <div className="w-1.5 h-1.5 rounded-full bg-purple-500"></div>
+                      <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-purple-500"></div>
                       <span>Co-Founder @ ParkinToday </span>
                     </div>
                   </div>
 
                   {/* Skills Preview */}
-                  <div className="flex flex-wrap gap-2 pt-2">
+                  <div className="flex flex-wrap gap-1.5 sm:gap-2 pt-1 lg:pt-2">
                     {['Python', 'Java', 'IoT', 'Next.js', 'Leadership'].map((skill) => (
-                      <span key={skill} className="bg-white px-3 py-1 rounded-full text-xs text-gray-700 border border-gray-200">
+                      <span key={skill} className="bg-white px-2 sm:px-3 py-1 rounded-full text-[10px] sm:text-xs text-gray-700 border border-gray-200">
                         {skill}
                       </span>
                     ))}
@@ -312,9 +312,9 @@ export function HomePage({ searchQuery, setActiveTab }: HomePageProps) {
                 </div>
 
                 {/* View Full Resume Button */}
-                <button 
+                <button
                   onClick={() => setActiveTab('about')}
-                  className="mt-4 w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 rounded-xl hover:shadow-lg transition-all flex items-center justify-center gap-2"
+                  className="mt-3 sm:mt-4 w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-2.5 sm:py-3 rounded-xl hover:shadow-lg transition-all flex items-center justify-center gap-2 text-sm sm:text-base font-medium"
                 >
                   <span>View Full Profile</span>
                   <ArrowRight className="w-4 h-4" />
@@ -323,11 +323,7 @@ export function HomePage({ searchQuery, setActiveTab }: HomePageProps) {
 
               {/* Template Grid - Canva Style */}
               <div>
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-sm"></h3>
-                  <button className="text-sm text-purple-600 hover:text-purple-700"></button>
-                </div>
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-2 gap-2 sm:gap-3">
                   {templates.map((template, index) => (
                     <motion.div
                       key={template.id}
@@ -335,30 +331,32 @@ export function HomePage({ searchQuery, setActiveTab }: HomePageProps) {
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ delay: 0.6 + index * 0.1 }}
                       onClick={() => handleTemplateClick(template)}
-                      className="group bg-white rounded-2xl p-4 border border-gray-100 hover:border-purple-300 hover:shadow-lg transition-all cursor-pointer"
+                      className="group bg-white rounded-xl lg:rounded-2xl p-3 sm:p-4 border border-gray-100 hover:border-purple-300 hover:shadow-lg transition-all cursor-pointer"
                     >
-                      <div 
-                        className="w-full h-24 rounded-xl mb-3 flex flex-col items-center justify-center relative overflow-hidden p-3"
+                      <div
+                        className="w-full h-20 sm:h-24 rounded-lg sm:rounded-xl mb-2 sm:mb-3 flex flex-col items-center justify-center relative overflow-hidden p-2 sm:p-3"
                         style={{ background: template.image }}
                       >
                         {/* Stats Display */}
                         <div className="text-white relative z-10 text-center">
-                          <div className="flex items-center justify-center gap-1.5 mb-1 opacity-90">
-                            {template.stats.icon}
+                          <div className="flex items-center justify-center gap-1 sm:gap-1.5 mb-0.5 sm:mb-1 opacity-90">
+                            <div className="w-3 h-3 sm:w-4 sm:h-4">
+                              {template.stats.icon}
+                            </div>
                           </div>
-                          <div className="text-2xl mb-0.5">{template.stats.value}</div>
-                          <div className="text-xs opacity-90">{template.stats.label}</div>
+                          <div className="text-lg sm:text-2xl mb-0 sm:mb-0.5 font-bold">{template.stats.value}</div>
+                          <div className="text-[10px] sm:text-xs opacity-90">{template.stats.label}</div>
                         </div>
-                        
+
                         {/* Hover overlay */}
                         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all flex items-center justify-center">
                           <div className="opacity-0 group-hover:opacity-100 transition-all">
-                            <ExternalLink className="w-5 h-5 text-white" />
+                            <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                           </div>
                         </div>
                       </div>
-                      <h4 className="text-sm mb-1">{template.title}</h4>
-                      <p className="text-xs text-gray-500">{template.description}</p>
+                      <h4 className="text-xs sm:text-sm mb-0.5 sm:mb-1 font-medium">{template.title}</h4>
+                      <p className="text-[10px] sm:text-xs text-gray-500 line-clamp-1">{template.description}</p>
                     </motion.div>
                   ))}
                 </div>
@@ -371,10 +369,10 @@ export function HomePage({ searchQuery, setActiveTab }: HomePageProps) {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.6 }}
-            className="mt-12 lg:mt-16"
+            className="mt-8 lg:mt-16"
           >
-            <h2 className="text-xl lg:text-2xl mb-6 text-center lg:text-left">Recent Highlights</h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <h2 className="text-lg sm:text-xl lg:text-2xl mb-4 lg:mb-6 text-center lg:text-left font-semibold">Recent Highlights</h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
               {[
                 {
                   title: 'Hardware Hackathon 2.0',
@@ -400,13 +398,13 @@ export function HomePage({ searchQuery, setActiveTab }: HomePageProps) {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.9 + index * 0.1 }}
-                  className="bg-white rounded-2xl p-5 border border-gray-100 hover:border-purple-200 hover:shadow-lg transition-all"
+                  className="bg-white rounded-xl lg:rounded-2xl p-4 lg:p-5 border border-gray-100 hover:border-purple-200 hover:shadow-lg transition-all"
                 >
-                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${highlight.color} flex items-center justify-center text-2xl mb-3`}>
+                  <div className={`w-10 h-10 sm:w-12 sm:h-12 rounded-lg lg:rounded-xl bg-gradient-to-br ${highlight.color} flex items-center justify-center text-xl sm:text-2xl mb-2 lg:mb-3`}>
                     {highlight.icon}
                   </div>
-                  <h3 className="text-sm mb-1">{highlight.title}</h3>
-                  <p className="text-xs text-gray-500">{highlight.description}</p>
+                  <h3 className="text-xs sm:text-sm font-semibold mb-1">{highlight.title}</h3>
+                  <p className="text-[10px] sm:text-xs text-gray-500 leading-relaxed">{highlight.description}</p>
                 </motion.div>
               ))}
             </div>
