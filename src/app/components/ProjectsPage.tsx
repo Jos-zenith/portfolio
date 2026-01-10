@@ -46,7 +46,7 @@ export function ProjectsPage({ searchQuery }: ProjectsPageProps) {
       category: 'Web development',
       description: 'Turning invasive weeds into world-class bio-preservatives',
       image: 'https://i.postimg.cc/hP9T95wZ/glass-beaker-with-green-leaf-inside-971713-5040.avif',
-      tags: ['fullstack', 'NumPy', 'Scikit-learn'],
+      tags: ['fullstack', 'Green Innovation', 'AgriTech'],
       color: 'blue',
       achievement: '💡 Ramnad Hackathon (STARTUPTN)',
       link: 'https://karuvelam.vercel.app/',
