@@ -84,7 +84,7 @@ export function HomePage({ searchQuery, setActiveTab }: HomePageProps) {
       link: 'https://leetcode.com/u/Zenith_Joshua/',
       stats: {
         label: 'Problems',
-        value: '150+',
+        value: '60+',
         subtext: 'Solved',
         icon: <Code2 className="w-5 h-5" />,
       }
