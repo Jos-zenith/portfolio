@@ -20,13 +20,13 @@ export function ProjectsPage({ searchQuery }: ProjectsPageProps) {
     },
     {
       id: 2,
-      title: 'EmployeeFit',
+      title: 'EngineerFit',
       category: 'Web development',
       description: 'Turning psychometrics into career clarity for South Indian engineers',
       image: 'https://i.postimg.cc/rsHWf6Tb/mechanical-gears-integration-human-brain-silhouette-innovation-creativity-concept-1332469-219.jpg',
       tags: ['Full Stack', 'Health Tech', 'UX Design'],
       color: 'green',
-      achievement: '💡 Nellai Hackathon (STARTUPTN)',
+      achievement: '💡 Recognized as top 10 best innovative ideas in AI buildathon'26',
       link: 'https://ebv-engineerfit-seven.vercel.app/',
     },
     {
