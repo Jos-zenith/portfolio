@@ -27,7 +27,7 @@ export function ProjectsPage({ searchQuery }: ProjectsPageProps) {
       tags: ['Full Stack', 'Health Tech', 'UX Design'],
       color: 'green',
       achievement: '💡 Nellai Hackathon (STARTUPTN)',
-      link: 'https://engineerfit.vercel.app/',
+      link: 'https://ebv-engineerfit-seven.vercel.app/',
     },
     {
       id: 3,
